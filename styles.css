@@ -1,0 +1,124 @@
+input[type="number"] {
+  max-width: 80%;
+}
+
+html, body {
+   height: 100%;
+}
+
+div.outer {
+  position: fixed;
+  top: 41px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Table settings */
+
+table, th, td {
+   border: 1px solid black;
+   padding: 15 px;
+}
+
+/* Customize fonts */
+body, label, input, button, select { 
+  font-family: 'Helvetica Neue', Helvetica;
+  font-weight: 200;
+
+}
+h1, h2, h3, h4 { font-weight: 400; }
+
+h3 { font-size: 16px; }
+
+body { font-size: 14px; }
+
+
+#controls {
+  /* Appearance */
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  cursor: move;
+  /* Fade out while not hovering */
+  opacity: 0.85;
+  zoom: 0.9;
+  transition: opacity 500ms 1s;
+}
+#controls:hover {
+  /* Fade in while hovering */
+  opacity: 0.80;
+  transition-delay: 0;
+}
+
+/* Position and style citation */
+#cite {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+}
+
+/* If not using map tiles, show a white background  */
+.leaflet-container {
+  background-color: rgba(255,0,0,0.0);
+}
+
+.glyphicon {
+    font-size: 10px;
+}
+
+body {
+    background-color: white
+    margin: 0;
+}
+#Rainbow {
+    height: 100%;
+    opacity: 0.3;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+#Rainbow .rainbow-color {
+    height: 100%;
+    margin-right: 20px;
+    width: 14%;
+    display: inline-block;
+}
+
+
+#Rainbow #red {
+    background-color: #D10000;
+    box-shadow: 25px 0 50px 25px #D10000;
+}
+#Rainbow #orange {
+    background-color: #FF6622;
+    box-shadow: -25px 0 50px 25px #FF6622, 25px 0 50px 25px #FF6622;
+}
+#Rainbow #yellow {
+    background-color: #FFDA21;
+    box-shadow: -25px 0 50px 25px #FFDA21, 25px 0 50px 25px #FFDA21;
+}
+#Rainbow #green {
+    background-color: #33DD00;
+    box-shadow: -25px 0 50px 25px #33DD00, 25px 0 50px 25px #33DD00;
+}
+#Rainbow #blue {
+    background-color: #1133CC;
+    box-shadow: -25px 0 50px 25px #1133CC, 25px 0 50px 25px #1133CC;
+}
+#Rainbow #indigo {
+    background-color: #220066;
+    box-shadow: -25px 0 50px 25px #220066, 25px 0 50px 25px #220066;
+}
+#Rainbow #violet {
+    background-color: #330044;
+    box-shadow: -25px 0 50px 25px #330044;
+}
