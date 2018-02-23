@@ -40,13 +40,6 @@ flightpaths <-reactive({  # A reactive function to
 
 observe({
   
-  print(input$airportname)
-  
-  # proxy %>% clearShapes()
-  # 
-  # proxy %>%  addCircleMarkers(airports, lng = airports$Australian_lon, lat = airports$Australian_lat, radius = 2, label = paste(airports$Australian, "Airport"))%>% 
-  # addPolylines(data = flightpaths(), weight = 1)
-  # 
   set_key("AIzaSyC32aX3MW41mEBS2invj_0t-i6EHEUmJAk")
   
   
@@ -57,9 +50,4 @@ observe({
   output$mymap <- renderGoogle_map({airportmap}) # render the base map
 })
 
-
-
-
-
-#####
 })
